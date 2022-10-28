@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.glass{
+    backdrop-filter: blur(5px);    
+    box-shadow: 0 1rem 3rem rgb(29 58 83 / 15%) !important
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container-padding-x{
+    @apply xl:px-0 lg:px-[20px] sm:px-[40px] px-[20px];
+}
+
+.profile-img{
+    @apply text-[14.5px] bg-secondary text-[#444242] rounded-[10px] sm:w-[40px] sm:h-[40px] w-[32px] h-[32px] flex items-center justify-center relative;
+}
+
+.noti-ball{
+    @apply after:absolute after:top-0 after:right-[-2px] after:w-[10px] after:h-[10px] after:rounded-full after:bg-red-600
+}
+
+.noti-ball::after{
+    animation: fade 2s infinite linear;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
