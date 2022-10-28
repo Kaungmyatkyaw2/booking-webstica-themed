@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { leftAction, rightAction } from '../../../store/main/Main'
+import { leftAction, rightAction } from '../../store/main/Main'
 
 const DropDownNav = ({icon,title,action}) => {
 

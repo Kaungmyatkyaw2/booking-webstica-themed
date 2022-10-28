@@ -1,7 +1,7 @@
 import {BiDotsHorizontalRounded,BiChevronDown} from 'react-icons/bi'
 import {AiOutlineMenu} from 'react-icons/ai'
 import {  useSelector } from 'react-redux'
-import DropDownNav from '../../components/input/dropdown/DropDownNav'
+import DropDownNav from '../../components/dropdown/DropDownNav'
 
 const NavIconPart = () => {
 
