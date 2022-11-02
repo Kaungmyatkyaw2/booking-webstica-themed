@@ -1,8 +1,8 @@
-import hero from '../../assets/hero.jpg'
-import circle1 from '../../assets/circle1.jpg'
-import circle2 from '../../assets/circle2.jpg'
+import hero from '../../../assets/hero.jpg'
+import circle1 from '../../../assets/circle1.jpg'
+import circle2 from '../../../assets/circle2.jpg'
 import {BsHeadset} from "react-icons/bs"
-import HeroCircle from '../../components/Circle/HeroCircle'
+import HeroCircle from '../../../components/Circle/HeroCircle'
 
 const HeroRightSide = () => {
   return (

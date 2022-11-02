@@ -4,6 +4,7 @@ import { createSlice } from "@reduxjs/toolkit"
 const initialState = {
     leftDrop : false,
     rightDrop : false,
+    aboutDrop : false    
 }
 
 const MainSlicer = createSlice({
@@ -17,9 +18,10 @@ const MainSlicer = createSlice({
         rightAction : (state) => {
             state.leftDrop = false;
             state.rightDrop = !(state.rightDrop)
-        }
+        },
+       
     }
 })
 
 export default MainSlicer.reducer
-export const {leftAction,rightAction} = MainSlicer.actions
+export const {leftAction,rightAction,viewChange} = MainSlicer.actions

@@ -1,9 +1,9 @@
 import {FaHotel,FaPlane,FaGlobeAmericas,FaCarAlt} from 'react-icons/fa'
 import {BiBell} from 'react-icons/bi'
-import avatar from './../../assets/nav-avatar.jpg'
+import avatar from './../../../assets/nav-avatar.jpg'
 import {TbGridDots} from 'react-icons/tb'
 import { useSelector } from 'react-redux'
-import DropDownNav from '../../components/dropdown/DropDownNav'
+import DropDownNav from '../../../components/dropdown/DropDownNav'
 
 const NavRightPart = () => {
     const items = [
