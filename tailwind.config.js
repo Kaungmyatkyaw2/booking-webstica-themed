@@ -15,7 +15,8 @@ module.exports = {
         primary : "#5143D9"
       },
       boxShadow:{
-        'cus' : '0 1rem 3rem rgb(29 58 83 / 15%)'
+        'cus' : '0 1rem 3rem rgb(29 58 83 / 15%)',
+        'blurest' : '0px 0px 40px rgb(29 58 83 / 10%)' 
       }
     },
   },

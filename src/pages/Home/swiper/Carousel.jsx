@@ -17,7 +17,6 @@ const Carousel = () => {
 
   const [swipe,setSwipe] = useState({});
 
-  const dispatch = useDispatch()
 
 
   const data = [
@@ -43,19 +42,14 @@ const Carousel = () => {
     }
   ]
 
-  const { ref, inView, entry } = useInView({
-    threshold: 0,
-  });
 
 
-  useEffect(() => {
-    inView && dispatch(viewChange(inView))
-  },[inView])
 
+ 
 
 
   return (
-    <div ref={ref} className='container-cus lg:py-[110px] py-[90px] w-full flex  items-center relative overflow-hidden'>
+    <div className='container-cus lg:py-[110px] py-[90px] w-full flex  items-center relative overflow-hidden'>
       <div className='w-full flex justify-center peer'>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar,Autoplay]}
