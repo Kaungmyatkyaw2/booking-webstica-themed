@@ -2,7 +2,7 @@ import React from 'react'
 
 const PromotionBox = ({img,title,para}) => {
   return (
-    <div className='cursor-pointer flex sm:flex-row flex-col justify-center items-center w-[100%] rounded-[20px] overflow-x-hidden border xl:h-[130px] md:h-[150px] max-h-[500px]'>
+    <div className='cursor-pointer flex sm:flex-row flex-col justify-center items-center w-[100%] rounded-[20px] overflow-x-hidden border dark:border-none bg-[#191B1D] xl:h-[130px] md:h-[150px] max-h-[500px]'>
       <div className='sm:w-[50%] w-full sm:h-full h-[90%]'>
         <img className='h-full w-full object-cover' src={img} alt="" />
       </div>

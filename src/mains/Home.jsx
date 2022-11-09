@@ -12,7 +12,8 @@ import Carousel from '../pages/Home/swiper/Carousel'
 const Home = () => {
   return (
     <>
-    <Navbar/>
+    <div className='w-full flex flex-col items-center dark:text-white dark:bg-dark'>
+      <Navbar/>
       <Hero/>
       <Carousel/>
       <About/>
@@ -21,7 +22,10 @@ const Home = () => {
       <Quote/>
       <Places/>
       <Download/>
-      <Footer/></>
+      </div>
+     
+     <Footer/>
+    </>
   )
 }
 

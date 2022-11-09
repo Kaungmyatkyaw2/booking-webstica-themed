@@ -7,7 +7,7 @@ const DropDownNav = ({icon,title,action}) => {
     const dispatch = useDispatch()
 
   return (
-    <div className='xl:hidden  flex items-center space-x-[10px]' onClick={() => {action ? dispatch(leftAction()) : dispatch(rightAction())}}>
+    <div className='xl:hidden  flex items-center space-x-[10px] dark:text-white' onClick={() => {action ? dispatch(leftAction()) : dispatch(rightAction())}}>
         <div className='text-[20px]'>
             {icon}
         </div>

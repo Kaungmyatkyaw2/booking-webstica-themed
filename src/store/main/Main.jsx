@@ -4,7 +4,8 @@ import { createSlice } from "@reduxjs/toolkit"
 const initialState = {
     leftDrop : false,
     rightDrop : false,
-    aboutDrop : false    
+    aboutDrop : false,
+    darkMode : false
 }
 
 const MainSlicer = createSlice({
@@ -19,9 +20,12 @@ const MainSlicer = createSlice({
             state.leftDrop = false;
             state.rightDrop = !(state.rightDrop)
         },
+        switchMode : (state) => {
+            state.darkMode = !(state.darkMode)
+        }
        
     }
 })
 
 export default MainSlicer.reducer
-export const {leftAction,rightAction,viewChange} = MainSlicer.actions
+export const {leftAction,rightAction,switchMode} = MainSlicer.actions

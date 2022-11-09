@@ -54,8 +54,8 @@ const Quote = () => {
             ))
           }
         </Swiper>
-        <button className='absolute top-[50%] left-0 translate-y-[-50%] translate-x-[50%] text-[17px] z-[998] bg-white w-[50px] h-[50px] shadow-xl border-2 border-gray-500 rounded-full flex items-center justify-center' onClick={() => swipe.slidePrev()}><BsArrowLeft/></button>
-        <button className='absolute top-[50%] right-0 translate-y-[-50%] translate-x-[-50%] text-[17px] z-[998] bg-white w-[50px] h-[50px] shadow-xl border-2 border-gray-500 rounded-full flex items-center justify-center' onClick={() => swipe.slideNext()}><BsArrowRight/></button>
+        <button className='absolute top-[50%] left-0 translate-y-[-50%] translate-x-[50%] text-[17px] z-[998] bg-white dark:bg-[#191B1D] w-[50px] h-[50px] shadow-xl border-2 border-gray-500 rounded-full flex items-center justify-center' onClick={() => swipe.slidePrev()}><BsArrowLeft/></button>
+        <button className='absolute top-[50%] right-0 translate-y-[-50%] translate-x-[-50%] text-[17px] z-[998] bg-white dark:bg-[#191B1D] w-[50px] h-[50px] shadow-xl border-2 border-gray-500 rounded-full flex items-center justify-center' onClick={() => swipe.slideNext()}><BsArrowRight/></button>
 
       </div>
 

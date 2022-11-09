@@ -16,7 +16,7 @@
 }
 
 .profile-img{
-    @apply text-[14.5px] bg-secondary text-[#444242] rounded-[10px] sm:w-[40px] sm:h-[40px] w-[32px] h-[32px] flex items-center justify-center relative;
+    @apply text-[14.5px] bg-secondary dark:bg-[#363636] dark:text-white text-[#444242] rounded-[10px] sm:w-[40px] sm:h-[40px] w-[32px] h-[32px] flex items-center justify-center relative;
 }
 
 .noti-ball{

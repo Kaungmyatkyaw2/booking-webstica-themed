@@ -5,6 +5,8 @@ import 'aos/dist/aos.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './mains/Home'
 import About from './mains/About'
+import Footer from './pages/Home/footer/Footer'
+import { useSelector } from 'react-redux'
 
 
 const App = () => {
@@ -15,9 +17,13 @@ const App = () => {
 
 
 
+  const dark = useSelector(state => state.userAction.darkMode)
+
+  console.log(dark)
+
 
   return (
-    <div className='w-full flex flex-col items-center'>
+    <div className={`w-full flex flex-col items-center ${dark && 'dark' }`}>
 
       <BrowserRouter>
         <Routes>

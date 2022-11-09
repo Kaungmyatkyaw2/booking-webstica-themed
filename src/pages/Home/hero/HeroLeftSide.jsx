@@ -3,7 +3,7 @@ import HeroForm from './HeroForm'
 
 const HeroLeftSide = () => {
   return (
-    <div className='lg:w-[50%] w-[100%] text-black'>
+    <div className='lg:w-[50%] w-[100%] text-black dark:text-white'>
 
         <div className='w-full lg:block lg:pb-[140px] pb-[60px] space-y-[23px]'>
             <h1 className='xl:text-[64px] md:text-[50px] text-[37px] font-bold pb-[5px]'>Find the top <span className='lg:block relative mt-[-20px] xl:w-full w-[80%] overflow-hidden'>
@@ -17,7 +17,7 @@ const HeroLeftSide = () => {
             <p className='text-[#747579] text-[14px] md:w-[80%] w-full'>We bring you not only a stay option, but an experience in your budget to enjoy the luxury.</p>
 
             <div className='flex sm:flex-row  sm:items-center flex-col sm:space-y-0 space-y-[20px] sm:space-x-[30px]'>
-            <button className='px-[15px] py-[8px] w-fit text-primary font-[600] tracking-wider bg-secondary rounded-[10px]'>Discover Now</button>
+            <button className='px-[15px] py-[8px] w-fit text-primary dark:text-primary font-[600] tracking-wider bg-secondary dark:bg-purple-200 dark:bg-opacity-[0.1] rounded-[10px]'>Discover Now</button>
             <div className='flex items-center space-x-[10px]'>
                 <div className='w-[50px] h-[50px] rounded-full overflow-hidden relative'>
                 <img className='w-full h-full object-cover' src="https://booking.webestica.com/assets/images/avatar/12.jpg" alt="" />

@@ -24,7 +24,7 @@ const FirstSection = () => {
             <div className="w-full flex justify-center items-center sm:space-x-[20px] md:space-y-0 space-y-[20px] pt-[10px] sm:flex-row flex-col flex-wrap md:mt-0 mt-[-20px]">
                 {
                     data.map((i,index) => (
-                        <div key={index} className="lg:px-[25px] px-[13px] py-[7px] shadow-blurest rounded-[10px] md:w-fit sm:w-[45%] w-fit flex items-center justify-center space-x-[10px] md:first-of-type:mt-0 mt-[20px]">
+                        <div key={index} className="lg:px-[25px] px-[13px] py-[7px] shadow-blurest rounded-[10px] md:w-fit sm:w-[45%] w-fit flex items-center justify-center space-x-[10px] md:first-of-type:mt-0 mt-[20px] dark:bg-[#191B1D]">
                             <img className="w-[20px]" src={i.img} alt="" />
                             <h1 className="font-[500] lg:text-[16px] text-[15.5px]">{i.title}</h1>
                         </div>

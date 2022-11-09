@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
+
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
@@ -12,7 +14,8 @@ module.exports = {
       colors:{
         black :"#0b0a12",
         secondary : "#EDECFB",
-        primary : "#5143D9"
+        primary : "#5143D9",
+        dark : "#222529"
       },
       boxShadow:{
         'cus' : '0 1rem 3rem rgb(29 58 83 / 15%)',
