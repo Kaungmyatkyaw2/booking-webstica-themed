@@ -8,6 +8,7 @@ import { BsBookmarkCheck, BsInfoCircle, BsPower } from 'react-icons/bs'
 import { AiOutlineHeart, AiOutlineSetting } from 'react-icons/ai'
 import { switchMode } from '../../../store/main/Main'
 import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 
 
@@ -15,15 +16,18 @@ const NavRightPart = () => {
     const items = [
         {
             title : "Hotel",
-            icon : <FaHotel/>
+            icon : <FaHotel/>,
+            path : '/'
         },
         {
             title : "Flight",
-            icon : <FaPlane/>
+            icon : <FaPlane/>,
+            path : '/flight'
         },
         {
             title : "Tour",
-            icon : <FaGlobeAmericas/>
+            icon : <FaGlobeAmericas/>,
+            path : '/tour'
         },
         {
             title : "Cab",
@@ -66,10 +70,10 @@ const NavRightPart = () => {
         <div className={`xl:w-fit w-full bg-white dark:bg-dark !scale-1 xl:flex ${show ? 'flex' :'hidden'} xl:flex-row flex-col xl:px-0 px-[20px] space-x-[8px] xl:relative absolute top-[100%] left-0 xl:space-y-0 space-y-[20px] xl:shadow-none shadow-xl`}>
             {
                 items.map((i,index) => (
-                   <a href="#" key={index} className={`${i.title === "Hotel" ? 'bg-secondary dark:bg-primary dark:bg-opacity-[0.1] text-primary' : ''} flex items-center justify-center font-[500] space-x-[8px] px-[12px] py-[8px] rounded-[7px] text-[16px]`}>
+                   <NavLink to={i.path} key={index} className={`${i.title === "Hotel" ? 'btn-secondary' : ''} flex items-center justify-center font-[500] space-x-[8px] px-[12px] py-[8px] rounded-[7px] text-[16px]`}>
                     <span className='text-[17px]'>{i.icon}</span>
                     <span>{i.title}</span>
-                    </a>
+                    </NavLink>
                 ))
             }
         </div>

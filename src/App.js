@@ -7,6 +7,10 @@ import Home from './mains/Home'
 import About from './mains/About'
 import Footer from './pages/Home/footer/Footer'
 import { useSelector } from 'react-redux'
+import Flight from './mains/Flight'
+import FlightFirstFormOne from './pages/flight/FlightFirstFormOne'
+import FlightFirstFormTwo from './pages/flight/FlightFirstFormTwo'
+import Tour from './mains/Tour'
 
 
 const App = () => {
@@ -28,7 +32,12 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path='/about' element={<About/>} />
+          <Route path='/`about' element={<About/>} />
+          <Route path='/flight' element={<Flight/>}>
+           <Route index element={<FlightFirstFormOne/>} />
+           <Route path='two' element={<FlightFirstFormTwo/>} />
+          </Route>
+          <Route path='/tour' element={<Tour/>} />
         </Routes>
       </BrowserRouter>
 

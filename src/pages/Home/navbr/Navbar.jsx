@@ -4,6 +4,7 @@ import NavRightPart from './NavRightPart'
 
 const Navbar = () => {
 
+
   return (
 
         <div className={`w-full flex justify-center bg-white dark:bg-dark xl:sticky top-0 left-0 z-[999] relative`}>

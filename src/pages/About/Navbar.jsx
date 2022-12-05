@@ -67,7 +67,7 @@ const Navbar = () => {
         <button className='px-[10px] py-[5px] rounded-[5px] bg-primary text-white text-[13px] font-bold flex items-center space-x-[5px]'><BsArrowBarRight className='sm:text-[18px] text-[25px]'/> <span className='sm:block hidden'>Sign Up</span></button>
     </div>
 </div>
-</div>
+    </div>
   )
 }
 

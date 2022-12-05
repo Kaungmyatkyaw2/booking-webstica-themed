@@ -1,6 +1,5 @@
 import { FaQuoteLeft } from 'react-icons/fa'
 import Rating from '@mui/material/Rating';
-import { AiFillStar } from 'react-icons/ai';
 
 const QuoteComponents = ({img,des,name,job,reaction,rate}) => {
 
